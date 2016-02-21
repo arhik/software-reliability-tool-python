@@ -1,0 +1,1 @@
+module.exports = require("github:plotly/plotly.js@1.5.1/lib/index");

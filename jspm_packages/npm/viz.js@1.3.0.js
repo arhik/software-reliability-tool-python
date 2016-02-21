@@ -1,0 +1,1 @@
+module.exports = require("npm:viz.js@1.3.0/viz");

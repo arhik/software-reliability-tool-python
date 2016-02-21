@@ -1,0 +1,1 @@
+module.exports = require("npm:three@0.73.0/three");

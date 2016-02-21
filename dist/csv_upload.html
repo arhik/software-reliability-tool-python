@@ -1,0 +1,35 @@
+<template>
+	<div id="csv">
+		<!-- <input type="file" accept=".txt,.csv"/> -->
+		<!-- <form id="fileupload" enctype="multipart/form-data" role="form" submit.delegate="csv_data()" method="post" ref="fileform"> -->
+		<label id="tooltipid" for="fileupload" mdl="button" class="mdl-js-button mdl-button--fab mdl-js-ripple-effect" >
+			<div id="buttonhide" style='height: 0px;width:0px; overflow:hidden;'>
+				<input  id="fileupload"
+						type="file" 
+						change.delegate=csv_data()
+						accept=".txt,.csv" 
+						files.bind="datafile"/>
+						</div> 
+					<i class="material-icons">add</i>
+
+		</label>
+
+		<div mdl="tooltip" for="tooltipid">
+			${msg}
+		</div>
+
+		
+			<!-- <input type="Submit" class="mdl-button mdl-js-button mdl-button--fab mdl-button--colored"value="upload"/> -->
+		<!-- </form> -->
+	</div>
+
+	<div id="compute">
+		<button id="computeButton" mdl="button"  disable.bind="disable" click.delegate=computedata() class="mdl-js-button mdl-button--fab mdl-js-ripple-effect">
+			<i class="material-icons">add</i>
+		</button>
+	</div>	
+	<div mdl="tooltip" for="computeButton">
+			Run models on the given data.
+		</div>
+
+</template>

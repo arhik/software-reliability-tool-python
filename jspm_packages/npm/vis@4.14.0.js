@@ -1,0 +1,1 @@
+module.exports = require("npm:vis@4.14.0/dist/vis");

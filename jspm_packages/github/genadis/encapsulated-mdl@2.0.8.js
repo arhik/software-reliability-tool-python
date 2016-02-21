@@ -1,0 +1,1 @@
+module.exports = require("github:genadis/encapsulated-mdl@2.0.8/material.min");
